@@ -1,0 +1,48 @@
+.topul{
+	padding: 0px;
+	margin: 0px;
+	height: 80px;
+	line-height: 80px;
+}
+.topul li{
+	list-style: none;
+	float: left;
+	padding: 0 50px;
+	position: relative;
+	transition: 0.2s all;
+    cursor: pointer;
+}
+.topul li a{
+	color: black;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+.topul li:hover a{
+	color:#FC571F;
+	font-weight: bold;
+	text-decoration: none;
+}
+.topul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 3px solid #fc571f;
+    transition: 0.2s all;
+}
+
+.topul li:hover::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.1s;
+    border-bottom-color: #fc571f;
+    z-index: -1;
+}
+
+.topul li:hover ~ li::before {
+    left: 0;
+}
