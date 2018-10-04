@@ -1,3 +1,7 @@
+@font-face{
+	font-family: 'yy';
+	src: url(../res/SIMYOU.TTF) format('truetype');
+}
 .topul{
 	padding: 0px;
 	margin: 0px;
@@ -17,11 +21,13 @@
 	display: inline-block;
 	height: 100%;
 	width: 100%;
+	font-family: "yy";
 }
 .topul li:hover a{
 	color:#FC571F;
-	font-weight: bold;
 	text-decoration: none;
+	font-weight: bold;
+
 }
 .topul li::before {
     content: "";
